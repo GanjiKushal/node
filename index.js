@@ -10,3 +10,7 @@ app.get('/',(req,res)=>{
 app.get("/home", (req,res)=>{
     res.send("<h1>Hello World</h1>")
 })
+app.post("/home",(req,res)=>{
+    console.log("We are in POST API")
+    res.send("<h1>Welcome to Post request</h1>")
+})
